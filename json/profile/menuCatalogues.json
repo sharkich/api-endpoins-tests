@@ -1,0 +1,144 @@
+{
+    "alps": {
+        "version": "1.0",
+        "descriptors": [
+            {
+                "id": "menuCatalogue-representation",
+                "href": "http://lab.vrinfinity.com/meta/profile/menuCatalogues",
+                "descriptors": [
+                    {
+                        "name": "created",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "createdBy",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "lastModified",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "status",
+                        "doc": {
+                            "value": "CURRENT, DEPRECATED, OBSOLETE",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "variant",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "version",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "description",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "displayName",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "identifier",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "fixtureSet",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/fixtures#fixture-representation"
+                    },
+                    {
+                        "name": "imageSet",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/images#image-representation"
+                    },
+                    {
+                        "name": "planogramSet",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/planograms#planogram-representation"
+                    },
+                    {
+                        "name": "pointOfSaleSet",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/pointOfSales#pointOfSale-representation"
+                    },
+                    {
+                        "name": "productSet",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/products#product-representation"
+                    }
+                ]
+            },
+            {
+                "id": "get-menuCatalogues",
+                "name": "menuCatalogues",
+                "type": "SAFE",
+                "rt": "#menuCatalogue-representation",
+                "descriptors": [
+                    {
+                        "name": "page",
+                        "doc": {
+                            "value": "The page to return.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "size",
+                        "doc": {
+                            "value": "The size of the page to return.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "sort",
+                        "doc": {
+                            "value": "The sorting criteria to use to calculate the content of the page.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    }
+                ]
+            },
+            {
+                "id": "create-menuCatalogues",
+                "name": "menuCatalogues",
+                "type": "UNSAFE",
+                "rt": "#menuCatalogue-representation"
+            },
+            {
+                "id": "get-menuCatalogue",
+                "name": "menuCatalogue",
+                "type": "SAFE",
+                "rt": "#menuCatalogue-representation"
+            },
+            {
+                "id": "delete-menuCatalogue",
+                "name": "menuCatalogue",
+                "type": "IDEMPOTENT",
+                "rt": "#menuCatalogue-representation"
+            },
+            {
+                "id": "update-menuCatalogue",
+                "name": "menuCatalogue",
+                "type": "IDEMPOTENT",
+                "rt": "#menuCatalogue-representation"
+            },
+            {
+                "id": "patch-menuCatalogue",
+                "name": "menuCatalogue",
+                "type": "UNSAFE",
+                "rt": "#menuCatalogue-representation"
+            }
+        ]
+    }
+}

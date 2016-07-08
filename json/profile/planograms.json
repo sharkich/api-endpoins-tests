@@ -1,0 +1,188 @@
+{
+    "alps": {
+        "version": "1.0",
+        "descriptors": [
+            {
+                "id": "planogram-representation",
+                "href": "http://lab.vrinfinity.com/meta/profile/planograms",
+                "descriptors": [
+                    {
+                        "name": "countryCode",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "depth",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "height",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "languageCode",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "pointOfSaleMap",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "region",
+                        "doc": {
+                            "value": "AFRICA, ASIA_PACIFIC, EUROPE, MIDDLE_EAST, NORTH_AMERICA, SOUTH_AMERICA, SOUTH_EAST_ASIA",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "thumb128",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "thumb256",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "thumb512",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "unitOfLength",
+                        "doc": {
+                            "value": "CENTIMETRE, FOOT, INCH, METRE, MILLIMETRE",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "width",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "created",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "createdBy",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "data",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "format",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "lastModified",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "lastModifiedBy",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "nameOfFile",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "status",
+                        "doc": {
+                            "value": "CURRENT, DEPRECATED, OBSOLETE",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "variant",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "version",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "description",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "displayName",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "identifier",
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "productMap",
+                        "type": "SAFE",
+                        "rt": "http://lab.vrinfinity.com/meta/profile/products#product-representation"
+                    }
+                ]
+            },
+            {
+                "id": "get-planograms",
+                "name": "planograms",
+                "type": "SAFE",
+                "rt": "#planogram-representation",
+                "descriptors": [
+                    {
+                        "name": "page",
+                        "doc": {
+                            "value": "The page to return.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "size",
+                        "doc": {
+                            "value": "The size of the page to return.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    },
+                    {
+                        "name": "sort",
+                        "doc": {
+                            "value": "The sorting criteria to use to calculate the content of the page.",
+                            "format": "TEXT"
+                        },
+                        "type": "SEMANTIC"
+                    }
+                ]
+            },
+            {
+                "id": "create-planograms",
+                "name": "planograms",
+                "type": "UNSAFE",
+                "rt": "#planogram-representation"
+            },
+            {
+                "id": "get-planogram",
+                "name": "planogram",
+                "type": "SAFE",
+                "rt": "#planogram-representation"
+            },
+            {
+                "id": "delete-planogram",
+                "name": "planogram",
+                "type": "IDEMPOTENT",
+                "rt": "#planogram-representation"
+            },
+            {
+                "id": "update-planogram",
+                "name": "planogram",
+                "type": "IDEMPOTENT",
+                "rt": "#planogram-representation"
+            },
+            {
+                "id": "patch-planogram",
+                "name": "planogram",
+                "type": "UNSAFE",
+                "rt": "#planogram-representation"
+            }
+        ]
+    }
+}
